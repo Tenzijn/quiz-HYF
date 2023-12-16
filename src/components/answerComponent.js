@@ -1,19 +1,21 @@
-import { checkAnswer } from '../utils/checkAnswer';
-
+/**
+ * Creates a li element for each answer
+ * @param {string}  key - Key of each answer in answers object in questions.
+ * @param {string}  answerText - The value of each answer in answers object in questions.
+ * @param {function} onSelect - Triggered when user selects an answer.
+ * @function clickHandler - Calls onClick and disableClick functions.
+ * @function disableClick - Disables clicking again when user choose an answer.
+ * @returns {HTMLLIElement} - The li element as an option
+ */
 let clickHandlerFunctions = new Map();
 
-export const createAnswerComponent = (
-  key,
-  answerText,
-  onSelect,
-  checkAnswer
-) => {
+export const createAnswerComponent = (key, answerText, onSelect) => {
   const element = document.createElement('li');
   element.id = key;
   element.innerHTML = String.raw`
     <label for="${key}">
       <input type="radio" name="answerItem" value=${key} id="${key}" />
-    ${answerText}
+    ${key}: ${answerText}
     </label>
   `;
   const clickHandlerFunction = clickHandler(onSelect);

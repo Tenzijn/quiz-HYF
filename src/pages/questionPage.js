@@ -1,3 +1,7 @@
+/**
+ * Initializes question page. Places the components on question page and calls necessary methods.
+ * @function nextQuestion - Re initializes question page with next question.
+ */
 import {
   ANSWERS_LIST_ID,
   NEXT_QUESTION_BUTTON_ID,

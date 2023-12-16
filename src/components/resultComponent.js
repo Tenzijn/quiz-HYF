@@ -1,3 +1,9 @@
+/**
+ * Creates a div element for showing the total score.
+ * @function restartQuiz - Restarts the quiz, resets score.
+ * @returns {HTMLDivElement} - The div element that keeps total score.
+ */
+
 import { RETRY_BUTTON_ID } from '../constants';
 import { quizData } from '../data.js';
 import { initQuestionPage } from '../pages/questionPage.js';
