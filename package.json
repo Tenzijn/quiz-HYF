@@ -7,9 +7,7 @@
     "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "jsdoc": "jsdoc -r -c ./jsdoc.conf.js",
-    "docdash": "jsdoc ./src/app.js -t ./docdash",
-    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+    "generate-docs": "./node_modules/.bin/jsdoc2md --files ./src > docs.md"
   },
   "repository": {
     "type": "git",
@@ -22,7 +20,7 @@
   },
   "homepage": "https://github.com/HackYourFuture/browser-quiz-project-starter",
   "devDependencies": {
-    "jsdoc": "^4.0.2",
+    "jsdoc-to-markdown": "^8.0.0",
     "prettier": "^2.2.1",
     "sass": "^1.69.5"
   },

@@ -6,6 +6,10 @@ import { USER_INTERFACE_ID, START_QUIZ_BUTTON_ID } from '../constants.js';
 import { createWelcomeComponent } from '../components/welcomeComponent.js';
 import { initQuestionPage } from './questionPage.js';
 
+/**
+ * initWelcomePage.
+ * @description A page to show welcome page
+ */
 export const initWelcomePage = () => {
   const userInterface = document.getElementById(USER_INTERFACE_ID);
   userInterface.innerHTML = '';
