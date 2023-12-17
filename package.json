@@ -7,7 +7,9 @@
     "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "jsdoc": "jsdoc -r -c ./jsdoc.conf.js"
+    "jsdoc": "jsdoc -r -c ./jsdoc.conf.js",
+    "docdash": "jsdoc ./src/app.js -t D:/HYF/docdash",
+    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
   },
   "repository": {
     "type": "git",
