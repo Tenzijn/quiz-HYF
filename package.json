@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/HackYourFuture/browser-quiz-project-starter",
   "devDependencies": {
+    "jsdoc": "^4.0.2",
     "prettier": "^2.2.1",
     "sass": "^1.69.5"
   },
