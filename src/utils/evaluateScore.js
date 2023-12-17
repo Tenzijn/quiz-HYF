@@ -1,3 +1,8 @@
+/**
+ * @function evaluateScore - Checks the score and define a evaluation sentence.
+ * @param {number} score - Quiz data total score.
+ * @returns {string} - Evaluation sentence.
+ */
 export const evaluateScore = (score) => {
   let evaluation;
   switch (score) {
