@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "jsdoc": "jsdoc -r -c ./jsdoc.conf.js",
-    "docdash": "jsdoc ./src/app.js -t D:/HYF/docdash",
+    "docdash": "jsdoc ./src/app.js -t ./docdash",
     "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
   },
   "repository": {
