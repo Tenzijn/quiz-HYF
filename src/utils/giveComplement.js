@@ -1,9 +1,10 @@
 /**
- * @function evaluateScore - Checks the score and define a evaluation sentence.
+ * Give Complement Utility
+ * @function evaluateScore - Checks the score and define a complement sentence.
  * @param {number} score - Quiz data total score.
  * @returns {string} - Evaluation sentence.
  */
-export const evaluateScore = (score) => {
+export const giveComplement = (score) => {
   let evaluation;
   switch (score) {
     case 0: {

@@ -13,6 +13,7 @@ import { setLocalStorage } from '../utils/setLocalStorage.js';
 import { checkAnswer } from '../utils/checkAnswer.js';
 import { disableBtn, enableBtn } from '../utils/enableAndDisableBtn.js';
 /**
+ * Question Page
  * @description Initializes question page. Places the components on question page and calls necessary methods.
  * @function nextQuestion - Re initializes question page with next question.
  */

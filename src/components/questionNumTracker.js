@@ -1,5 +1,6 @@
 import { QUESTION_NUMBER_TRACKER_ID } from '../constants';
 /**
+ * Question Number Tracker
  * @description Creates a div element for tracking the current question number.
  * @param {number}  currentQuestionNumber - The id of question.
  * @param {number}  totalQuestions - The length of questions array.

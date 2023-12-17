@@ -1,5 +1,6 @@
 import { START_QUIZ_BUTTON_ID } from '../constants.js';
 /**
+ * Welcome Component
  * @description Creates a div element for showing the landing page components.
  * @returns {HTMLDivElement} - The div element that keeps timer.
  */

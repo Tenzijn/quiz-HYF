@@ -1,6 +1,7 @@
 import { ANSWERS_LIST_ID } from '../constants.js';
 import { NEXT_QUESTION_BUTTON_ID } from '../constants.js';
 /**
+ * Question Component
  * @description Creates a full question element
  * @param {string} question - The text of the question.
  * @returns {HTMLDivElement} - The full question element

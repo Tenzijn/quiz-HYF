@@ -1,6 +1,7 @@
 import { CORRECT, WRONG } from '../constants';
 import { quizData } from '../data';
 /**
+ * Check Answer Utility
  * @description Checks if selected option is correct answer or not. Colors the options according to result. Increment score according to result.
  * @param {number} questionIndex- Index number of current question in quiz data.
  */

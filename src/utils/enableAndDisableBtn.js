@@ -1,4 +1,5 @@
 /**
+ * Enable/Disable Next Button Utility
  * @function enableBtn - Enables next button.
  * @function disableBtn - Disables next button.
  */

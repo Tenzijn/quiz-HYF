@@ -1,5 +1,6 @@
 import { TIMER_COMPONENT_ID, TIMER_SECONDS } from '../constants';
 /**
+ * Timer Component
  * @description Creates a div element for showing the timer.
  * @param {function} onFinish - Triggered when the timer counter reaches zero.
  * @function setCounter - Sets timer when the question change.

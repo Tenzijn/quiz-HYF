@@ -1,4 +1,5 @@
 /**
+ * Answer Component
  * @description Creates a li element for each answer
  * @param {string}  key - Key of each answer in answers object in questions.
  * @param {string}  answerText - The value of each answer in answers object in questions.
@@ -15,7 +16,7 @@ export const createAnswerComponent = (key, answerText, onSelect) => {
   element.innerHTML = String.raw`
     <label for="${key}">
       <input type="radio" name="answerItem" value=${key} id="${key}" />
-    ${key}: ${answerText}
+    ${answerText}
     </label>
   `;
   const clickHandlerFunction = clickHandler(onSelect);
