@@ -1,9 +1,9 @@
-/**
- * Checks if selected option is correct answer or not. Colors the options according to result. Increment score according to result.
- * @param {number} questionIndex- Index number of current question in quiz data.
- */
 import { CORRECT, WRONG } from '../constants';
 import { quizData } from '../data';
+/**
+ * @description Checks if selected option is correct answer or not. Colors the options according to result. Increment score according to result.
+ * @param {number} questionIndex- Index number of current question in quiz data.
+ */
 export const checkAnswer = (questionIndex) => {
   const userAnswers = JSON.parse(localStorage.getItem('answeredQuestions'));
   const userCurrentSelected = userAnswers[questionIndex];

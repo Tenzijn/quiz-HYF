@@ -1,12 +1,11 @@
+import { TIMER_COMPONENT_ID, TIMER_SECONDS } from '../constants';
 /**
- * Creates a div element for showing the timer.
+ * @description Creates a div element for showing the timer.
  * @param {function} onFinish - Triggered when the timer counter reaches zero.
  * @function setCounter - Sets timer when the question change.
  * @function appendTimer - Appends a timer to the div element.
  * @returns {HTMLDivElement} - The div element that keeps timer.
  */
-import { TIMER_COMPONENT_ID, TIMER_SECONDS } from '../constants';
-
 let timerId = null;
 export const createTimerComponent = (onFinish) => {
   const element = document.createElement('div');

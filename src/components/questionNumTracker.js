@@ -1,11 +1,10 @@
+import { QUESTION_NUMBER_TRACKER_ID } from '../constants';
 /**
- * Creates a div element for tracking the current question number.
+ * @description Creates a div element for tracking the current question number.
  * @param {number}  currentQuestionNumber - The id of question.
  * @param {number}  totalQuestions - The length of questions array.
  * @returns {HTMLDivElement} - The div element that keeps track of the current question
  */
-import { QUESTION_NUMBER_TRACKER_ID } from '../constants';
-
 export const questionNumberTracker = (
   currentQuestionNumber,
   totalQuestions

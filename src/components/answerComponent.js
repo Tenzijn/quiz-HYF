@@ -1,5 +1,5 @@
 /**
- * Creates a li element for each answer
+ * @description Creates a li element for each answer
  * @param {string}  key - Key of each answer in answers object in questions.
  * @param {string}  answerText - The value of each answer in answers object in questions.
  * @param {function} onSelect - Triggered when user selects an answer.
