@@ -9,6 +9,7 @@
 
 export const quizData = {
   currentQuestionIndex: 0,
+  totalScore: 0,
   // the questions in the quiz
   questions: [
     {
