@@ -1,10 +1,10 @@
 module.exports ={
     "plugins": [],
-    "recurseDepth": 20,
+    "recurseDepth": 10,
     "source": {
-        "include": ["src/components", "src/pages", "src/utils", "src/"],
-        "includePattern": ".+\\.js(doc|x)?$",
-        "excludePattern": "(^|\\/|\\\\)_"
+        "include": ["src"],
+        "includePattern": ".js$",
+        "excludePattern": ""
     },
     "sourceType": "module",
     "tags": {
