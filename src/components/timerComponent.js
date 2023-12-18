@@ -1,4 +1,6 @@
 import { TIMER_COMPONENT_ID, TIMER_SECONDS } from '../constants';
+import { quizData } from '../data';
+
 /**
  * Timer Component
  * @description Creates a div element for showing the timer.
@@ -7,7 +9,6 @@ import { TIMER_COMPONENT_ID, TIMER_SECONDS } from '../constants';
  * @function appendTimer - Appends a timer to the div element.
  * @returns {HTMLDivElement} - The div element that keeps timer.
  */
-let timerId = null;
 export const createTimerComponent = (onFinish) => {
   const element = document.createElement('div');
   element.id = TIMER_COMPONENT_ID;
@@ -19,12 +20,15 @@ export const createTimerComponent = (onFinish) => {
 
 const setCounter = (element, onFinish) => {
   let seconds = TIMER_SECONDS;
-  if (timerId) {
-    clearInterval(timerId);
+
+  // to clear the timer if the user clicks on the next question button
+  if (quizData.timerId) {
+    clearInterval(quizData.timerId);
   }
-  timerId = setInterval(() => {
+
+  quizData.timerId = setInterval(() => {
     if (seconds === 0) {
-      clearInterval(timerId);
+      clearInterval(quizData.timerId);
       onFinish();
       return;
     }
@@ -32,10 +36,6 @@ const setCounter = (element, onFinish) => {
   }, 1000);
 };
 
-// const appendTimer = (seconds) => {
-//   return String.raw`
-//     <h1>${seconds} </h1>
-//   `;
 const appendTimer = (seconds) => {
   // second turn in percentage
   // 100% = 20 seconds
@@ -43,7 +43,7 @@ const appendTimer = (seconds) => {
 
   return String.raw`
   <div class="statusbar orange">
-	<span style="width: ${percentage}%"></span>
-</div>
+	  <span style="width: ${percentage}%"></span>
+  </div>
   `;
 };

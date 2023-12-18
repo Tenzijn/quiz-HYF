@@ -30,6 +30,7 @@ export const initQuestionPage = () => {
    * save the selected answer to local storage
    * check if the answer is correct
    * enable the next question button
+   * clear the timer after the user selected an answer
    *************************************************************************** */
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
@@ -40,6 +41,7 @@ export const initQuestionPage = () => {
         currentQuestion.selected,
         checkAnswer
       );
+      clearInterval(quizData.timerId);
       enableBtn(NEXT_QUESTION_BUTTON_ID);
     });
     answerComponent.appendChild(answerElement);
