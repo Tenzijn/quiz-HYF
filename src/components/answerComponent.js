@@ -1,3 +1,13 @@
+/**
+ * Answer Component
+ * @description Creates a li element for each answer
+ * @param {string}  key - Key of each answer in answers object in questions.
+ * @param {string}  answerText - The value of each answer in answers object in questions.
+ * @param {function} onSelect - Triggered when user selects an answer.
+ * @function clickHandler - Calls onClick and disableClick functions.
+ * @function disableClick - Disables clicking again when user choose an answer.
+ * @returns {HTMLLIElement} - The li element as an option
+ */
 let clickHandlerFunctions = new Map();
 
 export const createAnswerComponent = (key, answerText, onSelect) => {

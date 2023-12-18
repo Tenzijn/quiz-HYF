@@ -6,7 +6,8 @@
     "prettier:check": "prettier --check .",
     "dev": "vite --port 3000",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-docs": "./node_modules/.bin/jsdoc2md --files ./src/**/*.js > docs.md"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/HackYourFuture/browser-quiz-project-starter",
   "devDependencies": {
+    "jsdoc-to-markdown": "^8.0.0",
     "prettier": "^2.2.1",
     "sass": "^1.69.5"
   },

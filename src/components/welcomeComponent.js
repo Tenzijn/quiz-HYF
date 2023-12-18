@@ -1,8 +1,8 @@
 import { START_QUIZ_BUTTON_ID } from '../constants.js';
-
 /**
- * Create the welcome screen
- * @returns {Element}
+ * Welcome Component
+ * @description Creates a div element for showing the landing page components.
+ * @returns {HTMLDivElement} - The div element that keeps timer.
  */
 export const createWelcomeComponent = () => {
   const element = document.createElement('div');
