@@ -12,7 +12,7 @@ export const createResultComponent = () => {
   const evaluation = giveComplement(quizData.totalScore);
   const element = document.createElement('div');
   element.innerHTML = String.raw`
-    <h1>Your Score is: <span id="totalScore">${quizData.totalScore}</span></h1>
+    <h1>Your Score is: <span id="totalScore">${quizData.totalScore} / 10</span></h1>
     <div id="evaluation">
     <h2>${evaluation}</h2>
     </div>
