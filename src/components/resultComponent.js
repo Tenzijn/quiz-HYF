@@ -11,12 +11,14 @@ import { giveComplement } from '../utils/giveComplement.js';
 export const createResultComponent = () => {
   const evaluation = giveComplement(quizData.totalScore);
   const element = document.createElement('div');
+  element.classList.add('card');
+
   element.innerHTML = String.raw`
-    <h1>Your Score is: <span id="totalScore">${quizData.totalScore} / 10</span></h1>
+    <h1 class='score'>Your Score is: <br/> <span id="totalScore">${quizData.totalScore} / 10</span></h1>
     <div id="evaluation">
-    <h2>${evaluation}</h2>
+    <h1 class='finalMessage'>" ${evaluation} "</h1>
     </div>
-    <button id="${RETRY_BUTTON_ID}">RETRY</button>
+    <button id="${RETRY_BUTTON_ID}" class='next-btn'>RETRY</button>
     `;
   element
     .querySelector(`#${RETRY_BUTTON_ID}`)

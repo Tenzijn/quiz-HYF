@@ -13,11 +13,10 @@ let clickHandlerFunctions = new Map();
 export const createAnswerComponent = (key, answerText, onSelect) => {
   const element = document.createElement('li');
   element.id = key;
+  element.classList.add('options');
   element.innerHTML = String.raw`
-    <label for="${key}">
       <input type="radio" name="answerItem" value=${key} id="${key}" />
-    ${answerText}
-    </label>
+      ${key.toUpperCase()}:  ${answerText}
   `;
   const clickHandlerFunction = clickHandler(onSelect);
   element.addEventListener('click', clickHandlerFunction);
@@ -40,7 +39,7 @@ const disableClick = () => {
     const clickHandlerFunction = clickHandlerFunctions.get(element);
     if (clickHandlerFunction) {
       element.removeEventListener('click', clickHandlerFunction);
-      element.style.cssText += 'opacity: 0.5';
+      element.style.cssText += 'opacity: 0.7';
     }
   });
 };
