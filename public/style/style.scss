@@ -60,6 +60,10 @@ body:before {
   transform: translate(-50%, -50%);
 }
 
+button {
+  padding: 12px 26px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -80,16 +84,16 @@ body:before {
   .start-btn {
     background: $button-color;
     border-radius: 999px;
-    // box-shadow: #5e5df0 0 10px 20px -10px;
+    box-shadow: #5e5df0 0 10px 20px -10px;
     box-shadow: $box-shadow-main;
     box-sizing: border-box;
     cursor: pointer;
-    padding: 8px 18px;
+    // padding: 8px 18px;
     width: fit-content;
     border: 0;
     color: white !important;
   }
-  
+
   .next-btn {
     margin-bottom: 15px;
     background: $button-color;
@@ -98,7 +102,6 @@ body:before {
     box-shadow: $box-shadow-main;
     box-sizing: border-box;
     cursor: pointer;
-    padding: 8px 18px;
     width: fit-content;
     border: 0;
     color: white !important;
@@ -191,7 +194,7 @@ body:before {
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
-  color: $color-primary-white;
+  color: $dark;
 }
 /************************* Timer Component *************************
 * progress bar must act like a timer with 20 seconds
