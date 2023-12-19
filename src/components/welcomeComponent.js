@@ -17,9 +17,10 @@ export const createWelcomeComponent = () => {
   Team: Nouran Mahmoud(Mentor) <br/> 
   Erhan (Student) and 
   Tenzin Kunchok (Student) <br />
+  <br />
   </p>
   
-    <button id="${START_QUIZ_BUTTON_ID}" class='start-btn'>start quiz</button>
+    <button id="${START_QUIZ_BUTTON_ID}" class='start-btn'>Start Quiz</button>
 
   `;
   return element;
