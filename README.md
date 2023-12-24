@@ -11,6 +11,7 @@
 ## HOSTING to NETLIFY
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f9d280f3-57b3-4a01-b6a7-87aa440e9ed9/deploy-status)](https://app.netlify.com/sites/hyf-quiz/deploys)
+
 [hyf-quiz.netlify.app](https://hyf-quiz.netlify.app/)
 
 # Structure
