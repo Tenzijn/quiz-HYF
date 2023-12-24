@@ -6,6 +6,7 @@ import { NEXT_QUESTION_BUTTON_ID } from '../constants.js';
  * @param {string} question - The text of the question.
  * @returns {HTMLDivElement} - The full question element
  */
+
 export const createQuestionComponent = (question) => {
   const element = document.createElement('div');
   element.classList.add('card');
