@@ -14,7 +14,7 @@
 
 [hyf-quiz.netlify.app](https://hyf-quiz.netlify.app/)
 
-# Structure
+# File Structure
 
 Let's run through the folders:
 
