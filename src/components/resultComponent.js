@@ -18,7 +18,7 @@ export const createResultComponent = () => {
     <div id="evaluation">
     <h1 class='finalMessage'>" ${evaluation} "</h1>
     </div>
-    <button id="${RETRY_BUTTON_ID}" class='next-btn'>RETRY</button>
+          <button id="${RETRY_BUTTON_ID}" class='next-btn'>RETRY</button>
     `;
   element
     .querySelector(`#${RETRY_BUTTON_ID}`)
